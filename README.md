@@ -24,3 +24,7 @@ Click the "Generate Passwords" button to get two random passwords.
 Future Plans:
 Allow users to choose whether to include numbers and special characters.
 Feel free to explore, contribute, or suggest improvements!
+
+Thanks for your time!
+
+All the best, Pir :)
