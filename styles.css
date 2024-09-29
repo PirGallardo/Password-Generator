@@ -12,7 +12,7 @@ body {
   flex-direction: column;
   padding: 20px;
   width: 30rem;
-  margin: 10rem auto;
+  margin: 10rem auto 3rem auto;
   box-sizing: border-box;
 }
 
@@ -92,6 +92,27 @@ label {
   font-weight: 600; /* Negrita para hacerla más visible */
   margin-right: 10px; /* Espacio entre la etiqueta y el campo de entrada */
   margin-left: 20px;
+}
+
+/*Link to repo*/
+
+.repo-link {
+  text-align: center;
+}
+
+.repo-link a {
+  color: #10b981;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid #10b981;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+
+.repo-link a:hover {
+  background-color: #10b981;
+  color: white;
+  transition: 0.3s;
 }
 
 /*---------------MQ------------*/
