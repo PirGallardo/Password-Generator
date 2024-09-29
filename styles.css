@@ -1,0 +1,125 @@
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  color: white;
+}
+
+/* Main Container */
+
+.hero {
+  background-color: #1f2937;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 30rem;
+  margin: 10rem auto;
+  box-sizing: border-box;
+}
+
+span {
+  color: #4adf86;
+}
+
+h1 {
+  margin-bottom: 0;
+  margin-left: 20px;
+  font-size: 2rem;
+}
+
+h3 {
+  margin-top: 10px;
+  font-weight: 200;
+  margin-left: 20px;
+}
+
+.gen-btn {
+  background-color: #10b981;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  width: 175px;
+  margin: 20px 0 45px 20px;
+  border-radius: 6px;
+  font-family: "Karla", sans-serif;
+}
+
+.gen-btn:hover {
+  background-color: #4adf86;
+  color: #1f2937;
+  cursor: pointer;
+}
+.underline {
+  border-bottom: 2px solid #2f3e53;
+}
+
+.gen-pass {
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.final-pass {
+  background-color: #273549;
+  border-radius: 6px;
+  padding: 10px 20px;
+  word-wrap: break-word; /* Forzar que el texto no salga del contenedor */
+  max-width: 180px; /* Limita el ancho máximo */
+  text-align: center; /* Alineamos el texto al centro */
+  min-width: 120px;
+}
+
+.final-pass:hover {
+  background-color: #10b981;
+  cursor: pointer;
+}
+
+/* Estilos para el campo de entrada */
+input[type="number"] {
+  width: 60px; /* Ajusta el ancho del campo de entrada */
+  padding: 5px; /* Espaciado interno */
+  border: 1px solid #ccc; /* Borde gris claro */
+  border-radius: 4px; /* Bordes redondeados */
+  margin-left: 20px; /* Espacio entre la etiqueta y el campo de entrada */
+  font-size: 16px; /* Tamaño de fuente */
+  margin-top: 20px;
+  background-color: #1f2937;
+  color: white;
+}
+
+/* Estilo para la etiqueta */
+label {
+  color: white; /* Color del texto de la etiqueta */
+  font-weight: 600; /* Negrita para hacerla más visible */
+  margin-right: 10px; /* Espacio entre la etiqueta y el campo de entrada */
+  margin-left: 20px;
+}
+
+/*---------------MQ------------*/
+
+@media (max-width: 500px) {
+  .hero {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .final-pass {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  .hero {
+    max-width: 500px; /* Limitar el ancho en pantallas más grandes */
+  }
+
+  .gen-pass {
+    flex-direction: row; /* Cambiar a fila en pantallas más grandes */
+    justify-content: space-around;
+  }
+
+  .final-pass {
+    padding: 10px 40px;
+    max-width: 45%; /* Limitar el ancho de las contraseñas */
+  }
+}
